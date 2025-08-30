@@ -31,7 +31,7 @@ body {
   position: relative;
   z-index: 2;
   /* オーラ */
-  box-shadow: 0 0 20px rgba(255,255,255,0.6), 0 0 40px rgba(255,255,255,0.4), 0 0 60px rgba(255,255,255,0.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.499), 0 0 40px rgba(255,255,255,0.4), 0 0 60px rgba(255,255,255,0.2);
 }
 
 .intro-text p {
@@ -58,10 +58,12 @@ body {
   display: inline-block;
   transition: 0.3s;
   cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .link-box:hover {
-  box-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff, inset 0 0 20px #ffffff;
+  box-shadow: 0 0 20px #e0c2ff, 0 0 40px #e6fffa, inset 0 0 20px #5d4f63;
+  transform: scale(1.05);
 }
 
 #copied-notice {
